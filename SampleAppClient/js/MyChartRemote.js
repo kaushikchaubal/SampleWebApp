@@ -1,6 +1,6 @@
 	
-		function refreshChart(areaCode) {
-			var url = "http://ec2-54-237-33-114.compute-1.amazonaws.com:8020/ec2/Maternity/getMethodOfDelivery?id=" + areaCode;
+		function refreshChart() {
+			var url = "http://localhost:3000/getData";
 			
 			var options = {
 				chart: {
@@ -8,19 +8,18 @@
 					renderTo: 'chart'
 				},
 				title: {
-					text: 'Method of Delivery'
+					text: 'Second title text'
 				},
 				xAxis: {
 					categories: [],
 					title: {
-						text: 'Area'
+						text: 'X-axis'
 					}
 				},
 				yAxis: {
 					min: 0,
 					title: {
-						text: 'Incidents',
-						align: 'high'
+						text: 'Y-axis',
 					},
 					labels: {
 						overflow: 'justify'
@@ -36,7 +35,7 @@
 				var series1 = [];
 				
 				$.each(data, function(key,val) { 
-					if (key == "Spontaneous" || key == "Elective_caesarean" || key == "Emergency_caesarean" || key == "Instrumental" || key == "Unknown" )
+					if (key == "First value" || key == "Second value" || key == "Third value" || key == "Forth value" || key == "Fifth value" )
 					{
 						x_categories.push(key);
 						series1.push(val);
@@ -57,13 +56,12 @@
 
 		
 		function btnRefresh_Clicked() {
-			var name = $("#nameSelector").val();
-			refreshChart(name);
+			refreshChart();
 		}
 	
 		$(function() {
 			loadAreas();
-			refreshChart("RVV");
+			refreshChart();
 			
 			$("#btnRefresh").click(btnRefresh_Clicked);
 		});
