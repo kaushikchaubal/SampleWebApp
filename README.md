@@ -15,6 +15,7 @@ Steps to run the Server:
  1. Preequisites: Install node (and hence, npm)
  2. Checkout the code
  3. sudo npm install -g express-generator
- 4. sudo npm install
- 5. npm start
+ 4. sudo npm install cors
+ 5. sudo npm install
+ 6. npm start
  (If any doubts around express, use http://expressjs.com/guide.html)
