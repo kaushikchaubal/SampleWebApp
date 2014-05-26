@@ -1,20 +1,23 @@
 	$(function () {
-		$('#mychart').highcharts({
+		$('#firstChart').highcharts({
 			chart: {
 				type: 'line'
 			},
 			title: {
-				text: 'Title Text'
+				text: 'First title text'
 			},
 			subtitle: {
 				text: 'Source: some-source.com'
 			},
 			xAxis: {
-				categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+				categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'],
+				title: {
+					text: 'X-axis'
+				}
 			},
 			yAxis: {
 				title: {
-					text: 'Temperature (°C)'
+					text: 'Y-axis'
 				}
 			},
 			plotOptions: {
