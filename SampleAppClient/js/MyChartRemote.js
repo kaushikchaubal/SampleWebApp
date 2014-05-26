@@ -57,8 +57,8 @@
 
 		
 		function btnRefresh_Clicked() {
-			var areaCode = $("#areaSelector").val();
-			refreshChart(areaCode);
+			var name = $("#nameSelector").val();
+			refreshChart(name);
 		}
 	
 		$(function() {
