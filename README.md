@@ -11,10 +11,10 @@ Steps to run the client:
 - However, you will need to point the JS files to the particular location where the server is being run
 - Once the javascript files are pointing to the correct location, launch index.html in your favourite web browser
 
-Steps to run the Server:
-1. Preequisites: Install node (and hence, npm)
-2. Checkout the code
-3. sudo npm install -g express-generator
-4. sudo npm install
-5. npm start
-(If any doubts around express, use http://expressjs.com/guide.html)
+Steps to run the Server: 
+ 1. Preequisites: Install node (and hence, npm)
+ 2. Checkout the code
+ 3. sudo npm install -g express-generator
+ 4. sudo npm install
+ 5. npm start
+ (If any doubts around express, use http://expressjs.com/guide.html)
